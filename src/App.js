@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Graph from './components/graph';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends Component {
+  state = {  } 
+  render() { 
+    return (
+     <div>
+      <h2>Sorting Visualizer</h2>
+      <button onClick={this.bubbleSort}>Bubble Sort</button>
+      <button onClick={this.insertionSort}>Insertion Sort</button>
+      <button onClick={this.reset}>Reset</button>
+      <div>
+        <Graph></Graph>
+      </div>
     </div>
-  );
+    
+   );
+  }
 }
-
+ 
 export default App;
+

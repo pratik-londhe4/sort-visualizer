@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bar{
+  background-color: aqua;
+  margin: 1px;
+}
+.graph{
+  border: 1px solid;
+  width: fit-content
+}
